@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp" />
+    <ClCompile Include="Test\Bell\Math\Test_Sign.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

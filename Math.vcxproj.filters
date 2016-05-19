@@ -34,5 +34,8 @@
     <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp">
       <Filter>Test\Bell\Math</Filter>
     </ClCompile>
+    <ClCompile Include="Test\Bell\Math\Test_Sign.cpp">
+      <Filter>Test\Bell\Math</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
