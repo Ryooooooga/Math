@@ -29,12 +29,18 @@
     <ClInclude Include="Bell\Math\IsNaN.hpp">
       <Filter>Bell\Math</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Math\Constants.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp">
       <Filter>Test\Bell\Math</Filter>
     </ClCompile>
     <ClCompile Include="Test\Bell\Math\Test_Sign.cpp">
+      <Filter>Test\Bell\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Test\Bell\Math\Test_Constants.cpp">
       <Filter>Test\Bell\Math</Filter>
     </ClCompile>
   </ItemGroup>

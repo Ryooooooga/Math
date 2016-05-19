@@ -148,11 +148,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bell\Math\Constants.hpp" />
     <ClInclude Include="Bell\Math\IsNaN.hpp" />
     <ClInclude Include="Bell\Math\Math.hpp" />
     <ClInclude Include="Bell\Math\Sign.hpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Test\Bell\Math\Test_Constants.cpp" />
     <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp" />
     <ClCompile Include="Test\Bell\Math\Test_Sign.cpp" />
   </ItemGroup>
