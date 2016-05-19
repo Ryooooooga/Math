@@ -12,10 +12,27 @@
     <Filter Include="Bell\Math">
       <UniqueIdentifier>{b360b19d-40fb-444d-bd97-1be12df96b84}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Test\Bell">
+      <UniqueIdentifier>{6e58b250-3dc3-4657-9558-2ed597b7f694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test\Bell\Math">
+      <UniqueIdentifier>{6e07c339-d78d-4b3f-b994-67bfe9f2661c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bell\Math\Math.hpp">
       <Filter>Bell\Math</Filter>
     </ClInclude>
+    <ClInclude Include="Bell\Math\Sign.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Bell\Math\IsNaN.hpp">
+      <Filter>Bell\Math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp">
+      <Filter>Test\Bell\Math</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

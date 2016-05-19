@@ -146,7 +146,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Bell\Math\IsNaN.hpp" />
     <ClInclude Include="Bell\Math\Math.hpp" />
+    <ClInclude Include="Bell\Math\Sign.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Test\Bell\Math\Test_IsNaN.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
