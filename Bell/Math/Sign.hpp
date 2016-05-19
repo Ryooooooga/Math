@@ -28,6 +28,8 @@ namespace Bell { namespace Math {
 	template <typename NumericType>
 	constexpr NumericType sign(NumericType x) noexcept
 	{
+		static_assert(std::is_arithmetic<NumericType>::value, "");
+
 		return
 			x != x ? x :	//	MEMO: for Fuckin' Compiler MSVC: (NAN < 0 == true)
 			x < NumericType(0) ? NumericType(-1) :
