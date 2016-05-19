@@ -9,6 +9,7 @@
 
 #include <limits>
 #include "../../../Bell/Math/Sign.hpp"
+#include "../../../Bell/Math/IsNaN.hpp"
 
 using Bell::Math::sign;
 using Bell::Math::isNaN;

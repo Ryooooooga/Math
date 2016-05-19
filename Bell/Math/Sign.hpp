@@ -9,7 +9,7 @@
 
 #pragma once
 
-#include "IsNaN.hpp"
+#include <type_traits>
 
 namespace Bell { namespace Math {
 
@@ -26,21 +26,12 @@ namespace Bell { namespace Math {
 	 *             xが0ならば 0 を返す
 	 */
 	template <typename NumericType>
-	constexpr std::enable_if_t<std::is_floating_point<NumericType>::value, NumericType> sign(NumericType x) noexcept
+	constexpr NumericType sign(NumericType x) noexcept
 	{
-		//	MEMO: enable_if for Fuckin' Compiler MSVC: (NAN < 0) == true
 		return
-			isNaN(x) ? x :
+			x != x ? x :	//	MEMO: for Fuckin' Compiler MSVC: (NAN < 0 == true)
 			x < NumericType(0) ? NumericType(-1) :
 			x > NumericType(0) ? NumericType(+1) : NumericType(0);
-	}
-
-	template <typename NumericType>
-	constexpr std::enable_if_t<std::is_integral<NumericType>::value, NumericType> sign(NumericType x) noexcept
-	{
-		return
-			x < NumericType(0) ? NumericType(-1) :
-			x > NumericType(0) ? NumericType(+1) : x;
 	}
 
 }}	//	namespace Bell::Math
