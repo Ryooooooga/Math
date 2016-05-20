@@ -10,3 +10,6 @@
 #pragma once
 
 #include <cmath>
+#include "Constants.hpp"
+#include "IsNaN.hpp"
+#include "Sign.hpp"
