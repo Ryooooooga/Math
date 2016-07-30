@@ -11,7 +11,7 @@
 
 #include <type_traits>
 
-namespace Bell { namespace Math {
+namespace Bell::Math {
 
 	/**
 	 * @brief      符号関数
@@ -36,4 +36,4 @@ namespace Bell { namespace Math {
 			x > NumericType(0) ? NumericType(+1) : NumericType(0);
 	}
 
-}}	//	namespace Bell::Math
+}	//	namespace Bell::Math

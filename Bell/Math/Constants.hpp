@@ -11,9 +11,9 @@
 
 #include <type_traits>
 
-namespace Bell { namespace Math {
+namespace Bell::Math {
 
 	template <typename FloatType>
 	constexpr std::enable_if_t<std::is_floating_point<FloatType>::value, FloatType> pi = FloatType(3.1415926535897932384626433832795L);
 
-}}	//	namespace Bell::Math
+}	//	namespace Bell::Math

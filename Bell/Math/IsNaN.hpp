@@ -11,7 +11,7 @@
 
 #include <type_traits>
 
-namespace Bell { namespace Math {
+namespace Bell::Math {
 
 	/**
 	 * @brief      NaNか判別する
@@ -29,4 +29,4 @@ namespace Bell { namespace Math {
 		return x != x;
 	}
 
-}}	//	namespace Bell::Math
+}	//	namespace Bell::Math
